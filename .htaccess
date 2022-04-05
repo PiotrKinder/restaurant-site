@@ -1,0 +1,13 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule menu index.html
+RewriteRule imprezy-organizacja booking.html
+RewriteRule o-restauracji about.html
+RewriteRule galeria-zdjec gallery.html
+RewriteRule kontakt-restauracja-arizona contact.html
+RewriteRule dziekujemy-za-kontakt confirm.html
